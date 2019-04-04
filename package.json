@@ -1,50 +1,20 @@
 {
-  "_args": [
-    [
-      "zje-react-toast@1.0.4",
-      "F:\\Project\\questionnaire-business\\questionnaire-client"
-    ]
-  ],
-  "_from": "zje-react-toast@1.0.4",
-  "_id": "zje-react-toast@1.0.4",
-  "_inBundle": false,
-  "_integrity": "sha512-9OgOZpRcfhs+cO+WIAVZlfXUk0jmg1XM1Zlwv8Sl9ZQcvtvpD8DoWyPVEMC71ZsBiXhTPl+UqAC/VdkFUGmJaQ==",
-  "_location": "/zewail-react-toast",
-  "_phantomChildren": {
-    "create-react-class": "15.6.3",
-    "fbjs": "0.8.17",
-    "loose-envify": "1.3.1",
-    "prop-types": "15.6.2"
-  },
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "zje-react-toast@1.0.4",
-    "name": "zje-react-toast",
-    "escapedName": "zje-react-toast",
-    "rawSpec": "1.0.4",
-    "saveSpec": null,
-    "fetchSpec": "1.0.4"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/zewail-react-toast/-/zewail-react-toast-1.0.4.tgz",
-  "_spec": "1.0.4",
-  "_where": "F:\\Project\\questionnaire-business\\questionnaire-client",
-  "author": {
-    "name": "damon"
-  },
-  "bugs": {
-    "url": "https://github.com/ppeerit/ppeerit-react-toast/issues"
-  },
-  "dependencies": {
-    "object-assign": "^3.0.0",
-    "prop-types": "^15.5.8",
-    "react": "^0.14.7 || ^15.0.0",
-    "react-dom": "^0.14.7 || ^15.0.0"
-  },
+  "name": "zje-react-toast",
+  "version": "1.0.4",
   "description": "toast for reactjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel -d dist/ src/",
+    "lint": "eslint src/",
+    "prepublish": "npm run compile",
+    "read:version": "echo $npm_package_version"
+  },
+  "author": "damon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ppeerit/ppeerit-react-toast.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-eslint": "^4.1.8",
@@ -54,19 +24,10 @@
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^2.6.4"
   },
-  "homepage": "https://github.com/ppeerit/ppeerit-react-toast#readme",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "name": "zje-react-toast",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ppeerit/ppeerit-react-toast.git"
-  },
-  "scripts": {
-    "compile": "babel -d dist/ src/",
-    "lint": "eslint src/",
-    "prepublish": "npm run compile",
-    "read:version": "echo $npm_package_version"
-  },
-  "version": "1.0.4"
+  "dependencies": {
+    "object-assign": "^3.0.0",
+    "prop-types": "^15.5.8",
+    "react": "^0.14.7 || ^15.0.0",
+    "react-dom": "^0.14.7 || ^15.0.0"
+  }
 }
